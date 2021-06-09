@@ -14,7 +14,7 @@ endif()
 
 
 if (NOT MONERO_DIR)
-    set(MONERO_DIR ~/monero)
+    set(MONERO_DIR ~/puck-core)
 endif()
 
 message(STATUS MONERO_DIR ": ${MONERO_DIR}")
@@ -32,7 +32,7 @@ if (NOT MONERO_BUILD_DIR)
    if (NOT EXISTS ${MONERO_BUILD_DIR})   
         # try different location   
         message(STATUS "Trying different folder for monero libraries")
-        set(MONERO_BUILD_DIR ${MONERO_SOURCE_DIR}/build/Linux/master/release/
+        set(MONERO_BUILD_DIR ${MONERO_SOURCE_DIR}/build/release/bin
             CACHE PATH "Path to the build directory for Monero" FORCE)
     endif()
 
